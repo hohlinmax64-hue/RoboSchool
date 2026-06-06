@@ -1,0 +1,52 @@
+// section
+@use 'variables' as *;
+
+// .slider {
+//     padding: 60px 0;
+// }
+
+// .swiper {
+//     width: 400px;
+//     height: 500px;
+// }
+
+// .swiper-slide{
+//     border: 1px solid black;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .modal-windows {
+//     padding: 60px 0;
+//     display: flex;
+//     justify-content: center;
+// }
+// .modal {
+//     display: none;
+//     justify-content: center;
+//     align-items: center;
+//     position: fixed;
+//     inset: 0;
+//     z-index: 100;
+//     background-color: rgba(0, 0, 0, 0.5);
+
+//     &.active {
+//         display: flex;
+//     }
+
+//     &__window {
+//         width: 400px;
+//         height: auto;
+//         padding: 20px;
+//         background-color: var(--color-white);
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex-direction: column;
+//     }
+
+//     &__window-close {
+//         display: inline-block;
+//     }
+// }

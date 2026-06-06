@@ -1,0 +1,28 @@
+// footer
+@use 'variables' as *;
+
+
+.footer {
+    padding: 25px 0;
+    background-color: var(--color-grau);
+    color: var(--color-white);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__link {
+    transition: all 300ms;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
