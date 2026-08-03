@@ -1,13 +1,21 @@
 :root {
-    --color-primary: #3498db;
-    --color-dark: #1a1a1a;
-    --color-light: #f5f5f5;
-    --color-white: #ffffff;
-    --color-grau: #494949;
+    --color-red: #D52027;
+    --color-dark-blue: #141024;
+    --color-ligth-blue: rgba(20, 16, 36, 0.7);
+    --color-bg: #F9F9F9;
+    --color-white: #fff;
 
-    --font-main: 'Arial', sans-serif;
-    --font-size-base: 16px;
+    --font-regular: 'Jost-Regular', sans-serif;
+    --font-bold: 'Jost-Bold', sans-serif;
+    --font-semibold: 'Jost-SemiBold', sans-serif;
 
-    --container-width: 1200px;
+    --padding-btn: 25px 54px;
+    --color-btn: #fff;
+    --color-font-size: 18px;
+    --background-btn: none;
+    --border-btn: none;
+    --border-radius-btn: 5px;
+
+    --container-width: 1327px;;
     --container-padding: 0 15px;
 }

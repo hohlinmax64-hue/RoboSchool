@@ -12,16 +12,22 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a href="" class="header__logo logo">Logo</a>
+      <div class="header__container">
+        <a href="" class="header__logo logo">ROBO.SCHOOL</a>
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="item-list"><a href="#" class="item-link">text</a></li>
-            <li class="item-list"><a href="#" class="item-link">text</a></li>
-            <li class="item-list"><a href="#" class="item-link">text</a></li>
+            <li class="item-list"><a href="#" class="item-link">О школе</a></li>
+            <li class="item-list"><a href="#" class="item-link">Тренеры</a></li>
+            <li class="item-list"><a href="#" class="item-link">Стоимость</a></li>
           </ul>
-          <button class="header__btn">Click</button>
         </nav>
+        <a class="header__tel" href="tel:78000001122">
+          +7 800 000 11 22
+        </a>
+        <div class="header__block">
+          <a class="header__tel-icon" href="tel:78000001122">
+          <img src="./src/img/icon/iconTel.svg" alt="">
+        </a>
         <div class="header__burger">
           <span></span>
           <span></span>
@@ -30,52 +36,220 @@
       </div>
     </header>
     <!-- SLIDER - MODAL-WONDOWS -->
-    <!-- <main class="mein">
-      <section class="slider">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">slide-1</div>
-            <div class="swiper-slide">slide-2</div>
-            <div class="swiper-slide">slide-3</div>
-            <div class="swiper-slide">slide-4</div>
+    <main class="mein">
+      <section class="welcome">
+        <div class="container">
+            <div class="welcome__info">
+              <h1 class="welcome__title">ROBO SCHOOL</h1>
+              <p class="welcome__text">Курсы повышения квалификации по робототехнике для педагогов  ачальной школы</p>
+              <button class="welcome__btn">Записаться на курс</button>
           </div>
-          <div class="swiper-pagination"></div>
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <div class="swiper-scrollbar"></div>
+          <div class="welcome__block">
+            <img class="welcome__img" src="./src/img/portrait-smiling-nostalgic-female-student-looking-upper-left-corner-holding-notebooks 1.svg" alt="">
+          </div>
         </div>
       </section>
-      <section class="modal-windows">
-        <button class="open-modal">CLick</button>
+      <section class="info-school">
+        <div class="container">
+          <div class="info-school__desc">
+            <p class="info-school__text"><span>Robo School </span>– учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования</p>
+          </div>
+          <div class="info-school__stats stats"> <!-- Добавляем класс stats как основной блок -->
+            <div class="stats__block">
+              <p class="stats__number">10</p>
+              <p class="stats__text">УМК по различным направлениям по робототехнике</p>
+            </div>
+            <div class="stats__block">
+              <p class="stats__number">20</p>
+              <p class="stats__text">Школ, в которых запущена робототехника</p>
+            </div>
+            <div class="stats__block">
+              <p class="stats__number">100</p>
+              <p class="stats__text">Педагогов прошедших курсы повышения квалификации</p>
+            </div>
+            <div class="stats__block">
+              <p class="stats__number">10 000</p>
+              <p class="stats__text">Обученных детей на базе собственных центров</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="results">
+        <div class="container">
+          <h2 class="results__title">Что вы получите после курса</h2>
+          <div class="results__info">
+            <div class="results__info-block">
+              <h3 class="results__info-title">Удостоверение</h3>
+              <p class="results__info-text">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+            </div>
+            <div class="results__info-block">
+              <h3 class="results__info-title">Знания</h3>
+              <p class="results__info-text">По основам разработки учебно-методических комплексов по робототехнике и программированию</p>
+            </div>
+            <div class="results__info-block">
+              <div class="results__info-tooltip">При наличии свободных мест</div>
+              <img src="./src/img/icon/tooltip.svg" alt="" class="results__info-icon">
+              <h3 class="results__info-title">Практику</h3>
+              <p class="results__info-text">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mentor">
+        <div class="container">
+          <h2 class="mentor__titel">Профессиональные тренеры</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide">
+                <div class="mentor__info">
+                  <img src="./src/img/img-slider1.jpg" alt="" class="mentor__info-img" data-img="./src/img/img-slider1.jpg">
+                  <div class="mentor__info-desc">
+                    <h3 class="mentor__info-desc__title" data-desc__title="desc__title1">Ирина Лайм</h3>
+                    <p class="mentor__info--desc__text">преподаватель по робототехнике</p>
+                    <button class="mentor__info-desc__btn">Подробнее</button>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="mentor__info">
+                  <img src="./src/img/img-slider2.jpg" alt="" class="mentor__info-img" data-img="./src/img/img-slider2.jpg">
+                  <div class="mentor__info-desc">
+                    <h3 class="mentor__info-desc__title" data-desc__title="desc__title2">Марина Орлова</h3>
+                    <p class="mentor__info--desc__text">преподаватель по робототехнике</p>
+                    <button class="mentor__info-desc__btn">Подробнее</button>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="mentor__info">
+                  <img src="./src/img/img-slider3.jpg" alt="" class="mentor__info-img" data-img="./src/img/img-slider3.jpg">
+                  <div class="mentor__info-desc">
+                    <h3 class="mentor__info-desc__title">Максим Петров</h3>
+                    <p class="mentor__info--desc__text" data-desc__title="desc__title3">преподаватель по робототехнике</p>
+                    <button class="mentor__info-desc__btn">Подробнее</button>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="mentor__info">
+                  <img src="./src/img/img-sloder4.jpg" alt="" class="mentor__info-img" data-img="./src/img/img-slider4.jpg">
+                  <div class="mentor__info-desc">
+                    <h3 class="mentor__info-desc__title" data-desc__title="desc__title4">Константин Назаров</h3>
+                    <p class="mentor__info--desc__text">преподаватель по робототехнике</p>
+                    <button class="mentor__info-desc__btn">Подробнее</button>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+                <div class="mentor__info">
+                  <img src="./src/img/umg-slider5.jpg" alt="" class="mentor__info-img" data-img="./src/img/img-slider5.jpg">
+                  <div class="mentor__info-desc">
+                    <h3 class="mentor__info-desc__title">Лиза Весенняя</h3>
+                    <p class="mentor__info--desc__text">преподаватель по робототехнике</p>
+                    <button class="mentor__info-desc__btn">Подробнее</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="mentor__swiper-block">
+            <div class="mentor__info-btns">
+              <div class="my-prev"><img src="./src/img/icon/Iconly/Bold/Arrow - Right Circle-1.svg" alt=""></div>
+              <div class="my-next"><img src="./src/img/icon/Iconly/Bold/Arrow - Right Circle.svg" alt=""></div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
         <div class="modal">
-          <div class="modal__window">
-            <h2 class="modal-window__title">Text</h2>
-            <p class="modal-window__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptatum adipisci, amet repudiandae possimus expedita commodi id eos, at fugit, a sint quia quis consectetur. Reprehenderit veritatis quibusdam temporibus ipsum.</p>
-            <button class="modal__window-close">Закрыть</button>
+          <div class="mentor__modal-window">
+            <div class="mentor__modal-inner">
+              <div class="mentor__modal-wrapper">
+                <img src="" alt="" class="mentor__modal-img" data-img="./src/img/img-slider1.jpg">
+                <div class="mentor__info-mentor">
+                  <h2 class="mentor__info-mentor-name">Ирина Лайм</h2>
+                  <p class="mentor__info-mentor-post">преподаватель по робототехнике</p>
+                  <div class="mentor__info-mentor-social">
+                    <img class="mentor__social-icon" src="./src/img/icon/Facebook.svg" alt="">
+                    <img class="mmentor__social-icon" src="./src/img/icon/Instagram.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <button class="mentor__window-close">Закрыть</button>
+              <button class="mentor__window-close-mobile">&times;</button>
+            </div>
+            <div class="mentor__modal-btns">
+              <button class="mentor__modal-btn" data-tab="school">Образование</button>
+              <button class="mentor__modal-btn" data-tab="experience">Опыт работы</button>
+              <button class="mentor__modal-btn" data-tab="awards">Награды</button>
+            </div>
+            <div class="mentor__modal-education">
+            </div> 
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="pricing">
+        <div class="container">
+          <h2 class="pricing__title">Выберите нужный пакет</h2>
+          <div class="cards">
+            <div class="cards__card">
+              <h3 class="cards__card-title">– PRO –</h3>
+              <div class="cards__card-desc">
+                <p class="cards__card-price">20.000 ₽</p>
+                <p class="cards__card-info">УМК по робототетхнике и программированию</p>
+              </div>
+              <button class="cards__card-btn">Оставить заявку</button>
+            </div>
+            <div class="cards__card">
+              <h3 class="cards__card-title">– ROBO –</h3>
+              <div class="cards__card-desc">
+                <p class="cards__card-price">15.000 ₽</p>
+                <p class="cards__card-info">УМК по робототетхнике</p>
+              </div>
+              <button class="cards__card-btn">Оставить заявку</button>
+            </div>
+            <div class="cards__card">
+              <h3 class="cards__card-title">– PROG –</h3>
+              <div class="cards__card-desc">
+                <p class="cards__card-price">10.000 ₽</p>
+                <p class="cards__card-info">УМК по программированию</p>
+              </div>
+              <button class="cards__card-btn">Оставить заявку</button>
+            </div>
           </div>
         </div>
       </section>
-    </main> -->
+      <section class="register">
+        <div class="container">
+          <div class="register__course">
+            <div class="course__info">
+              <h2 class="course__info-title">Запишитесь на курс со скидкой 10%</h2>
+              <p class="course__info-action">Акция действительна до 10 марта 2022 года</p>
+            </div>
+            <form class="course__form">
+              <input type="text" class="course__form-input-name" placeholder="Имя">
+              <input type="tel" class="course__form-input-pass" placeholder="Телефон">
+              <input type="email" class="course__form-input-email" placeholder="E-mail">
+              <button class="course__form-btn">Оформить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__inner">
-          <a href="#" class="footer__logo logo">Logo</a>
-          <nav class="footer__nav">
-            <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Главная</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Услуги</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
-            </ul>
-          </nav>
-          <p class="footer__copy">© 2024 My Project</p>
+          <div class="footer__inner-info">
+            <a href="#" class="footer__logo logo">ROBO.SCHOOL</a>
+            <p class="footer__copy">© ROBO.SCHOOL</p>
+          </div>
+          <a class="footer__tel" href="tel:78000001122">
+            +7 800 000 11 22
+          </a>
         </div>
       </div>
-    </footer> -->
+    </footer> 
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

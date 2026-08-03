@@ -2,10 +2,11 @@
 
 
 .header {
-    background-color: var(--color-primary);
-    padding: 25px 0;
+    width: 100%;
+    background-color: var(--color-dark-blue);
+    padding: 30px 20px;
 
-    .container {
+    &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -23,6 +24,9 @@
     }
 
     .item-link {
+        font-size: 20px;
+        line-height: 160%;
+        color: var(--color-white);
         transition: color 300ms;
 
         &:hover {
@@ -30,19 +34,25 @@
         }
     }
 
-    &__btn {
-        padding: 10px 24px;
-        background-color: var(--color-light);
-        color: var(--color-dark);
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: opacity 0.3s;
+    &__tel {
+        font-family: 'Jost-SemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+
+        transition: opacity 300ms;
 
         &:hover {
             opacity: 0.8;
         }
+    }
+
+    &__tel-icon {
+        display: none;
+    }
+
+    &__block {
+        display: none;
     }
 
     &__burger {
@@ -54,11 +64,14 @@
 
         span {
             display: block;
-            width: 100%;
+
             height: 3px;
-            background-color: var(--color-dark);
+            background-color: var(--color-white);
             transition: all 300ms;
         }
+        span:nth-child(3) {
+            width: 40%;
+        } 
         &.active span:nth-child(1){
             transform: translateY(7px) rotate(45deg);
         }
@@ -68,13 +81,18 @@
         }
         &.active span:nth-child(3){
             transform: translateY(-10px) rotate(-45deg);
+            width: 100%;
         }
+        &__block {
+            display: none; // скрыт на десктопе
+}
     }
 
-    @media(max-width: 768px) {
-        &__nav {
+@media(max-width: 900px) {
+    &__nav {
             width: 100%;
-            height:  100vh;
+            height: 100%;
+            overflow: hidden;
 
             display: flex;  
             flex-direction: column;
@@ -87,7 +105,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
 
-            background-color: var(--color-primary);
+            background-color: var(--color-dark-blue);
             color: var(--color-white);
 
             opacity: 0;
@@ -97,27 +115,45 @@
             &.active {
                 opacity: 1;
                 visibility: visible;
-                
             }
 
-        }
-        .header__list {
+    }
+    .header__list {
+            align-items: center;
             flex-direction: column;
             font-size: 32px;
-        }
-        .item-link {
+    }
+    .item-link {
+            font-size: 30px;
             transition: opacity 300ms;
 
             &:hover {
                 opacity: 0.8;
             }
-        }
-
-        &__burger {
-            display: flex;
-            position: relative;
-            z-index: 999;
-        }
+    }
+    &__tel {
+        display: none;   
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__tel-icon {
+        display: block;
+    }
+    &__burger {
+        display: flex;
+        position: relative;
+        z-index: 999;
+    }
     }
 }
 
+@media (max-width: 500px) {
+    .header {
+        &__logo {
+            font-size: 18px;
+        }
+    }
+}
