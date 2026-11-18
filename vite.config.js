@@ -1,14 +1,13 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    root: '.',
-    build: {
-        outDir: 'dist',
-        emptyOutDir: true,
-    },
-    css: {
-      devSourcemap: true, // опционально
-    },
-  // По
+  base: '/RoboSchool/',
+  root: '.',
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  },
+  css: {
+    devSourcemap: true,
+  },
 })
-
